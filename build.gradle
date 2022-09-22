@@ -2,19 +2,16 @@ plugins {
     id 'java'
 }
 
-group 'Java 1/1'
+group 'ru.netology'
 version '1.0-SNAPSHOT'
-
 sourceCompatibility = 1.8
-
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    testImplementation 'junit:junit:4.13' //для junit4
 }
-
 test {
-    useJUnitPlatform()
+    useJUnit() //для junit4
 }
